@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import classes from './OrderSummary.css';
 import Auxiliary from '../../../hoc/Auxiliary/Auxiliary';
 import Button from '../../UI/Button/Button';
 
@@ -20,20 +20,19 @@ class OrderSummary extends Component {
 
         return (
             <Auxiliary>
-                <h3 style={{ textAlign: 'center', color: 'red' }}>Your Order</h3>
-                <p style={{ textAlign: 'center' }}>A delicious burger with the following ingredients:</p>
-                <ul>
-                    {ingredientSummary}
-                </ul>
-                <p style={{ textAlign: 'center' }}><strong>Total Price: {this.props.price.toFixed(2)}$</strong></p>
-                <p style={{ textAlign: 'center' }}>Continue to Checkout?</p>
-                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                    <Button btnType="Danger" clicked={this.props.purchaseCancelled}>CANCEL</Button>
-                    <Button btnType="Success" clicked={this.props.purchaseContinued}>CONTINUE</Button>
+                <div className={classes.order}>
+                    <h3 className={classes.h3}>Your Order</h3>
+                    <p className={classes.p}>A delicious burger with the following ingredients:</p>
+                    <ul>
+                        {ingredientSummary}
+                    </ul>
+                    <p className={classes.p}><strong>Total Price: {this.props.price.toFixed(2)}$</strong></p>
+                    <p className={classes.p}>Continue to Checkout?</p>
+                    <div className={classes.button} >
+                        <Button btnType="Danger" clicked={this.props.purchaseCancelled}>CANCEL</Button>
+                        <Button btnType="Success" clicked={this.props.purchaseContinued}>CONTINUE</Button>
+                    </div>
                 </div>
-
-
-
             </ Auxiliary>
         );
     }

@@ -1,6 +1,25 @@
-.h3 {
+.order {
+    background-color: #fff;
+    background-image: linear-gradient(#eee .1em, transparent .1em);
+    background-size: 100% 1.2em;
+}
+
+h3 {
     color: red; 
     text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+}
+
+button:hover {
+    color: yellow ;
 }
 
 
