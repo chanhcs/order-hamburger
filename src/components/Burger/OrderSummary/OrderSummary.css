@@ -13,13 +13,9 @@ p {
     text-align: center;
 }
 
-.button {
+.buttonSummary {
     display: flex;
     justify-content: space-between;
-}
-
-button:hover {
-    color: yellow ;
 }
 
 
