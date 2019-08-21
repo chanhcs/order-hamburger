@@ -14,6 +14,7 @@ class ContactData extends Component {
                     type: 'text',
                     placeholder: 'Your Name'
                 },
+                errorMessage: 'Please enter a valid name',
                 value: '',
                 validation: {
                     required: true
@@ -28,6 +29,7 @@ class ContactData extends Component {
                     type: 'text',
                     placeholder: 'Street'
                 },
+                errorMessage: 'Please enter a valid street',
                 value: '',
                 validation: {
                     required: true
@@ -42,10 +44,11 @@ class ContactData extends Component {
                     placeholder: 'ZIP Code'
                 },
                 value: '',
+                errorMessage: 'Zip code must be less than or equal to 5 characters',
                 validation: {
                     required: true,
                     minLength: 5,
-                    maxLength: 5
+                    maxLength: 5                 
                 },
                 valid: false,
                 touched: false
@@ -56,6 +59,7 @@ class ContactData extends Component {
                     type: 'text',
                     placeholder: 'Country'
                 },
+                errorMessage: 'Please enter a valid  country',
                 value: '',
                 validation: {
                     required: true
@@ -69,6 +73,7 @@ class ContactData extends Component {
                     type: 'email',
                     placeholder: 'Your E-Mail'
                 },
+                errorMessage: 'Please enter a valid email',
                 value: '',
                 validation: {
                     required: true
@@ -162,7 +167,8 @@ class ContactData extends Component {
         let form = (
             <form onSubmit={this.orderHandler}>
                 {formElementsArray.map(formElement => (
-                    <Input 
+                    <Input
+                        valueType = {formElement.config.errorMessage}
                         key={formElement.id}
                         elementType={formElement.config.elementType}
                         elementConfig={formElement.config.elementConfig}
