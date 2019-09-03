@@ -60,7 +60,7 @@ class ContactData extends Component {
                     type: 'text',
                     placeholder: 'Country'
                 },
-                errorMessage: 'Please enter a valid  country',
+                errorMessage: 'Please enter a valid country',
                 value: '',
                 validation: {
                     required: true
@@ -111,7 +111,8 @@ class ContactData extends Component {
         if(rules.maxLength) {
             isValid = value.length <= rules.maxLength && isValid;
         }
-        return isValid && isValid;
+        
+        return isValid;
        
     }
 
