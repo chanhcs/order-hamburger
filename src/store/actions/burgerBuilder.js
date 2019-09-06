@@ -22,7 +22,7 @@ export const setIngredients = (ingredients) => {
     };
 };
 
-export const fetchIngredientsFaile = () => {
+export const fetchIngredientsFailed = () => {
     return {
         type: actionTypes.FETCH_INGREDIENTS_FAILED
     };
@@ -35,7 +35,7 @@ export const initIngredients = () => {
             dispatch(setIngredients(response.data))
         })
         .catch(error => {
-           dispatch(fetchIngredientsFaile());
+           dispatch(fetchIngredientsFailed());
         });
     };
 };
