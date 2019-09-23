@@ -117,8 +117,7 @@ class Auth extends Component {
                 invalid={!formElement.config.valid}
                 shouldValidate={formElement.config.validation}
                 touched={formElement.config.touched}
-                changed={( event ) => this.inputChangedHandler( event, formElement.id )} 
-                valueType={formElement.config.errorMessage}
+                changed={( event ) => this.inputChangedHandler( event, formElement.id )}                 
                 />
         ));
 
@@ -138,7 +137,7 @@ class Auth extends Component {
             <div className={classes.Auth}>
                 <form onSubmit={this.submitHandler}>                   
                     <h1>Sign In <span style={{color:'Green'}}>/</span> Sign Up</h1>
-                    {errorMessage}
+                    <span style={{color: 'red'}}>{errorMessage}</span>
                     {form}
                     <Button btnType="Success">SUBMIT</Button>
                 </form>
