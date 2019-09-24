@@ -6,6 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 import Orders from './containers/Orders/Orders';
 import Video from './components/Video/Video';
 import Auth from './containers/Auth/Auth';
+import Logout from './containers/Auth/Logout/Logout';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
             <Route path='/orders' component={Orders} />
             <Route path='/video' component={Video} />
             <Route path='/auth' component={Auth} />
+            <Route path='/logout' component={Logout} />
           </Switch>
         </Layout>
       </div>
