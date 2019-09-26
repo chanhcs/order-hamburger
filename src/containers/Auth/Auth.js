@@ -153,13 +153,13 @@ class Auth extends Component {
                     <span style={{ color: 'red' }}>{errorMessage}</span>
                     {form}
                     <Button btnType="Success">SUBMIT</Button>
-                </form>
+                </form>            
                 {
                 this.state.isSignUp
-                        ? <small style={{ color: "#999", fontWeight: "lighter" }}>
+                        ? <small className={classes.Small}>
                             Please fill in a SIGN UP form                             
                         </small>
-                        : <small style={{ color: "#999", fontWeight: "lighter" }}>
+                        : <small className={classes.Small}>
                             If you don't have an Account, please click on SWITCH TO SIGN UP
                         </small>
                 }
