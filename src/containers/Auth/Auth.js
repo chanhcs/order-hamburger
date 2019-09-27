@@ -16,7 +16,6 @@ class Auth extends Component {
                     type: 'email',
                     placeholder: 'Email'
                 },
-                errorMessage: 'Your input email is not valid',
                 value: '',
                 validation: {
                     required: true,
@@ -31,7 +30,6 @@ class Auth extends Component {
                     type: 'password',
                     placeholder: 'Password'
                 },
-                errorMessage: 'Password must consist of at least 8-character!',
                 value: '',
                 validation: {
                     required: true,
