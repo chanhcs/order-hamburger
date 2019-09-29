@@ -3,9 +3,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Order Hamburger
 
-https://order-hamburger-pmc.netlify.com
+https://orderhamburger.cf
 
-![version 1.4 - Order Hamburger](https://raw.githubusercontent.com/chanhcs/order-hamburger/master/document/hamburger.png)
+![version 1.6 - Order Hamburger](https://raw.githubusercontent.com/chanhcs/order-hamburger/master/document/hamburger.png)
 
 
 
