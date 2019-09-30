@@ -1,10 +1,6 @@
 .Video {
     display: flex;
     justify-content: center;  
-}
-
-
-.Video{
     overflow:hidden;
     padding-bottom:56.25%;
     position:relative;
