@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Order Hamburger
 
-https://orderhamburger.cf
+https://orderhamburger.tk
 
 ![version 1.6 - Order Hamburger](https://raw.githubusercontent.com/chanhcs/order-hamburger/master/document/hamburger.png)
 
